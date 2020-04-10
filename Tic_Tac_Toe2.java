@@ -7,4 +7,12 @@ public class Tic_Tac_Toe2 {
         char[] cells=sc.next().toUpperCase().toCharArray();
         System.out.println("----------");
         System.out.print("| ");
+        for(int i=0;i<=2;i++){
+            System.out.print(cells[i] + " ");
+        }
+        System.out.print("|\n| ");
+        for(int i=3;i<=5;i++){
+            System.out.print(cells[i] + " ");
+
+        }
 }}
