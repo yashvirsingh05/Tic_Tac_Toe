@@ -5,4 +5,6 @@ public class Tic_Tac_Toe3 {
         int count2 = 0;
         char index = ' ';
         Scanner sc = new Scanner(System.in);
-}}
+        System.out.print("Enter cells: ");
+
+    }}
