@@ -4,4 +4,7 @@ public class Tic_Tac_Toe2 {
         // write your code here
         Scanner sc=new Scanner(System.in);
         System.out.print("Enter cells: ");
+        char[] cells=sc.next().toUpperCase().toCharArray();
+        System.out.println("----------");
+        System.out.print("| ");
 }}
