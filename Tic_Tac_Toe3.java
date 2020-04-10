@@ -25,7 +25,13 @@ public class Tic_Tac_Toe3 {
                     }
                 }
             }
+            if (i != 2) {
+                System.out.print("|\n| ");
+            } else {
+                System.out.println("|");
+            }
+        }
 
         }
     }
-}
+
