@@ -116,6 +116,31 @@ public class Tic_Tac_Toe5 {
                         System.out.println("|");
                     }
                 }
+                System.out.println("---------");
+                if (newCells[0][2]!=' ' && newCells[0][2] == newCells[1][1] && newCells[1][1] == newCells[2][0]) {
+                    System.out.println(newCells[0][2] + " wins");
+                    exit(0);
+                } else if ((newCells[0][0]!=' '&&newCells[0][0] == newCells[1][1] && newCells[1][1] == newCells[2][2])) {
+                    System.out.println(newCells[0][0] + " wins");
+                    exit(0);
+                } else if (index == 'X' || index == 'O') {
+                    System.out.println(index + " wins");
+                    exit(0);
+                }
+                count1=0;
+                count2=0;
+                int count4=0;
+                for (int i = 0; i < 3; i++) {
+                    for (int j = 0; j < 3; j++) {
+                        if (newCells[i][j] != ' ') {
+                            count4+=1;
+                        }
+                    }
+                }
+                if (count4 == 9) {
+                    System.out.println("Draw");
+                    exit(0);
+                }
                     }
 
                 }
