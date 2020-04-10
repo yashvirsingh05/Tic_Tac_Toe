@@ -15,4 +15,13 @@ public class Tic_Tac_Toe2 {
             System.out.print(cells[i] + " ");
 
         }
-}}
+        System.out.print("|\n| ");
+        for(int i=6;i<=8;i++){
+            System.out.print(cells[i] + " ");
+
+        } System.out.println("|");
+        System.out.println("---------");
+
+    }
+}
+
