@@ -31,12 +31,12 @@ public class Tic_Tac_Toe4 {
             int indexRow = 0;
             int indexColumn = 0;
             boolean validInput = false;
-            while(!validInput) {
+            while (!validInput) {
                 try {
                     row = sc.nextInt();
-                    column=sc.nextInt();
+                    column = sc.nextInt();
                     validInput = true;
-                } catch(InputMismatchException e) {
+                } catch (InputMismatchException e) {
                     System.out.println("You should enter numbers!");
                     System.out.print("Enter the coordinates: ");
                     sc.nextLine();
@@ -79,7 +79,26 @@ public class Tic_Tac_Toe4 {
                 System.out.println("Coordinates should be from 1 to 3!");
                 continue;
             }
+            System.out.println("---------");
+            System.out.print("| ");
+            for (int i = 0; i < 3; i++) {
+                for (int j = 0; j < 3; j++) {
+                    if (AnotherCells[i][j] == '_') {
+                        AnotherCells[i][j] = ' ';
+                    }
+                    if (AnotherCells[indexRow][indexColumn] == '_' || AnotherCells[indexRow][indexColumn] == ' ') {
+                        AnotherCells[indexRow][indexColumn] = 'X';
+                    }
+                    System.out.print(AnotherCells[i][j] + " ");
+                }
+                if (i != 2) {
+                    System.out.print("|\n| ");
+                } else {
+                    System.out.println("|");
+                }
+            }
+            System.out.println("---------");
+            break;
         }
-
     }
 }
