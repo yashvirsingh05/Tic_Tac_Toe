@@ -31,7 +31,9 @@ public class Tic_Tac_Toe3 {
                 System.out.println("|");
             }
         }
+        System.out.println("---------");
 
-        }
+
+    }
     }
 
