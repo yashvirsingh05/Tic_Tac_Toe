@@ -23,7 +23,15 @@ public class Tic_Tac_Toe4 {
                 System.out.println("|");
             }
         }
-        System.out.println("---------");
+
+        while (true) {
+            System.out.print("Enter the coordinates: ");
+            int row = 0;
+            int column = 0;
+            int indexRow = 0;
+            int indexColumn = 0;
+            boolean validInput = false;
+        }
 
     }
 }
