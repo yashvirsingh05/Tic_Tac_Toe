@@ -80,7 +80,31 @@ public class Tic_Tac_Toe5 {
                     System.out.println("Coordinates should be from 1 to 3!");
                     continue;
                 }
+                System.out.println("---------");
+                System.out.print("| ");
+                for (int i = 0; i < 3; i++) {
+                    for (int j = 0; j < 3; j++) {
+                        if (newCells[indexRow][indexColumn] == ' ') {
+                            newCells[indexRow][indexColumn] = variable;
+                            if (variable == 'X') {
+                                variable = 'O';
+                            } else {
+                                variable = 'X';
+                            }
+                        }
+                        if (newCells[i][0] != ' ') {
+                            if (newCells[i][0] == newCells[i][1] && newCells[i][1] == newCells[i][2]) {
+                                count1 += 1;
+                                if (count1 == 3) {
+                                    index = newCells[i][0];
+                                }
+                            }
+                        }
+                    }
+
+                }
             }
 
         }
-    }}
+    }
+}
