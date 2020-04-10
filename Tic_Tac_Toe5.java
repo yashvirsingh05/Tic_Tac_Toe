@@ -13,6 +13,9 @@ public class Tic_Tac_Toe5 {
             int countElement = 0;
             Scanner sc = new Scanner(System.in);
             System.out.println("---------");
+            char[][] newCells = {{' ', ' ', ' '}, {' ', ' ', ' '}, {' ', ' ', ' '}};
+            System.out.print("| ");
         }
+
     }
 }
