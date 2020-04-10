@@ -100,11 +100,25 @@ public class Tic_Tac_Toe5 {
                                 }
                             }
                         }
+                        if (newCells[0][i] != ' ') {
+                            if (newCells[0][i] == newCells[1][i] && newCells[1][i] == newCells[2][i]) {
+                                count2 += 1;
+                                if (count2 == 3) {
+                                    index = newCells[0][i];
+                                }
+                            }
+                        }
+                        System.out.print(newCells[i][j] + " ");
+                    }
+                    if (i != 2) {
+                        System.out.print("|\n| ");
+                    } else {
+                        System.out.println("|");
+                    }
+                }
                     }
 
                 }
             }
 
         }
-    }
-}
