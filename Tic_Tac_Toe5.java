@@ -44,6 +44,34 @@ public class Tic_Tac_Toe5 {
                         sc.nextLine();
                     }
                 }
+                if (row == 1 && column == 1) {
+                    indexRow = 2;
+                    indexColumn = 0;
+                } else if (row == 1 && column == 2) {
+                    indexRow = 1;
+                    indexColumn = 0;
+                } else if (row == 1 && column == 3) {
+                    indexRow = 0;
+                    indexColumn = 0;
+                } else if (row == 2 && column == 1) {
+                    indexRow = 2;
+                    indexColumn = 1;
+                } else if (row == 2 && column == 2) {
+                    indexRow = 1;
+                    indexColumn = 1;
+                } else if (row == 2 && column == 3) {
+                    indexRow = 0;
+                    indexColumn = 1;
+                } else if (row == 3 && column == 1) {
+                    indexRow = 2;
+                    indexColumn = 2;
+                } else if (row == 3 && column == 2) {
+                    indexRow = 1;
+                    indexColumn = 2;
+                } else if (row == 3 && column == 3) {
+                    indexRow = 0;
+                    indexColumn = 2;
+                }
             }
 
         }
