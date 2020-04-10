@@ -71,6 +71,14 @@ public class Tic_Tac_Toe4 {
                 indexRow = 0;
                 indexColumn = 2;
             }
+            if (AnotherCells[indexRow][indexColumn] != '_') {
+                System.out.println("This cell is occupied! Choose another one!");
+                continue;
+            }
+            if (row > 3 || column > 3) {
+                System.out.println("Coordinates should be from 1 to 3!");
+                continue;
+            }
         }
 
     }
