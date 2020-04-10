@@ -31,6 +31,17 @@ public class Tic_Tac_Toe4 {
             int indexRow = 0;
             int indexColumn = 0;
             boolean validInput = false;
+            while(!validInput) {
+                try {
+                    row = sc.nextInt();
+                    column=sc.nextInt();
+                    validInput = true;
+                } catch(InputMismatchException e) {
+                    System.out.println("You should enter numbers!");
+                    System.out.print("Enter the coordinates: ");
+                    sc.nextLine();
+                }
+            }
         }
 
     }
